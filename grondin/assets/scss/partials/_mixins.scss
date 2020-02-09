@@ -1,0 +1,10 @@
+/*  mixins  */
+@mixin css3($a,$b){
+	-moz-#{$a}: $b;
+	-webkit-#{$a}: $b;
+	#{$a}: $b;
+}
+
+@function rems( $size, $base:$baseFontSize) {
+  @return $size / $baseFontSize + rem;
+}
